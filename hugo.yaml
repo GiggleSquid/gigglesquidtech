@@ -1,0 +1,135 @@
+baseURL: "https://gigglesquid.tech/"
+languageCode: "en-uk"
+title: "GiggleSquid"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+enableGitInfo: true
+
+pagination:
+  pagerSize: 8
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - identifier: home
+      name: home
+      url: /
+      weight: 10
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 20
+    # - identifier: series
+    #   name: series
+    #   url: /series/
+    #   weight: 30
+    # - identifier: tags
+    #   name: tags
+    #   url: /tags/
+    #   weight: 40
+    # - identifier: archive
+    #   name: archive
+    #   url: /archive/
+    #   weight: 50
+    # - identifier: search
+    #   name: search
+    #   url: /search/
+    #   weight: 60
+
+taxonomies:
+  tag: tags
+  series: series
+
+params:
+  env: production
+  title: That Ferret Blog
+  description: "GiggleSquid's ramblings"
+  keywords: [Blog]
+  author: GiggleSquid
+  DateFormat: "2 January, 2006"
+  copyrightStartYear: 2025
+  defaultTheme: dark
+  disableThemeToggle: false
+  cdnUrl: https://cdn.gigglesquid.tech
+
+  profileMode:
+    enabled: true
+    title: "GiggleSquid"
+    subtitle: "An ex IT gremlin"
+    imageUrl: "/The_Giggle_Squid.jpg" # optional
+    imageTitle: "GiggleSquid Logo" # optional
+    imageWidth: 200
+    imageHeight: 200
+    buttons:
+      - name: Archive
+        url: "/archive"
+      - name: Tags
+        url: "/tags"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/GiggleSquid"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowPageNums: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  ShareButtons: ["reddit", "telegram"]
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 20
+    keys: ["title", "permalink", "summary", "content"]
+
+  footer:
+    license: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">The content of <a property="dct:title" rel="cc:attributionURL" href="https://gigglesquid.tech">gigglesquid.tech</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://gigglesquid.tech">GiggleSquid</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img loading="lazy" style="height:16px!important;width:16px!important;margin-left:3px;vertical-align:text-bottom;display:inherit" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img loading="lazy" style="height:16px!important;width:16px!important;margin-left:3px;vertical-align:text-bottom;display:inherit" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img loading="lazy" style="height:16px!important;width:16px!important;margin-left:3px;vertical-align:text-bottom;display:inherit" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img loading="lazy" style="height:16px!important;width:16px!important;margin-left:3px;vertical-align:text-bottom;display:inherit" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+    analytics: This site uses <a target="_blank" rel="noopener noreferrer" href="https://umami.is" >Umami Analytics</a>, which collects non-personal, anonymised data.<br>You can opt out by blocking the umami_analytics.js script.<br>
+
+    text : Site created by <a target="_blank" rel="noopener noreferrer" href="https://gigglesquid.tech">Jack "GiggleSquid" Connors</a>
+
+privacy:
+    disable: false
+    privacyEnhanced: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+module:
+    mounts:
+    - source: assets
+      target: assets
+    - source: "node_modules/@catppuccin/palette/css"
+      target: "assets/css/catppuccin"
+    - source: "node_modules/@justinribeiro/lite-youtube"
+      target: "assets/js/lite-youtube"
+
+build:
+  buildStats:
+    enable: true

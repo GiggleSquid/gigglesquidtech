@@ -1,0 +1,38 @@
+:root {
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --main-width: 720px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --radius: 8px;
+  --theme: var(--ctp-latte-peach);
+  --entry: var(--ctp-latte-crust);
+  --primary: var(--ctp-latte-text);
+  --secondary: var(--ctp-latte-subtext1);
+  --tertiary: var(--ctp-latte-surface1);
+  --content: var(--ctp-latte-text);
+  --code-block-bg: var(--ctp-latte-surface2);
+  --code-bg: var(--ctp-latte-base);
+  --border: var(--ctp-latte-surface0);
+}
+
+.dark {
+  --theme: var(--ctp-mocha-peach);
+  --entry: var(--ctp-mocha-surface0);
+  --primary: var(--ctp-mocha-text);
+  --secondary: var(--ctp-mocha-subtext1);
+  --tertiary: var(--ctp-mocha-surface1);
+  --content: var(--ctp-mocha-text);
+  --code-block-bg: var(--ctp-mocha-surface2);
+  --code-bg: var(--ctp-mocha-base);
+  --border: var(--ctp-mocha-surface1);
+}
+
+.list {
+  background: var(--code-bg);
+}
+
+.dark.list {
+  background: var(--code-bg);
+}
