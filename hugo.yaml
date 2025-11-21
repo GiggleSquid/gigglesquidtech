@@ -55,7 +55,6 @@ params:
   copyrightStartYear: 2025
   defaultTheme: dark
   disableThemeToggle: false
-  cdnUrl: https://cdn.gigglesquid.tech
 
   profileMode:
     enabled: true

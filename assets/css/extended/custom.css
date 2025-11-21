@@ -1,7 +1,7 @@
 @font-face {
   font-family: "noto-sans";
   src:
-    url("https://cdn.gigglesquid.tech/fonts/NotoSans-VF.ttf") format("truetype");
+    url("/fonts/NotoSans-VF.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "noto-sans-italic";
   src:
-    url("https://cdn.gigglesquid.tech/fonts/NotoSans-Italic-VF.ttf") format("truetype");
+    url("/fonts/NotoSans-Italic-VF.ttf") format("truetype");
   font-style: italic;
   font-display: swap;
 }

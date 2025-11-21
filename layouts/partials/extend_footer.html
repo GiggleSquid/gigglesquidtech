@@ -7,7 +7,7 @@
   crossorigin="anonymous"
   type="module"
   {{ if eq hugo.Environment "production" -}}
-    src="{{ site.Params.cdnUrl -}} {{- $lite_yt.RelPermalink }}"
+    src="{{ $lite_yt.Permalink }}"
   {{- else -}}
     src="{{ $lite_yt.RelPermalink }}"
   {{- end }}
@@ -20,7 +20,7 @@
   crossorigin="anonymous"
   type="module"
   {{ if eq hugo.Environment "production" -}}
-    src="{{ site.Params.cdnUrl -}} {{- $lite_yt.RelPermalink }}"
+    src="{{ $lite_yt.Permalink }}"
   {{- else -}}
     src="{{ $lite_yt.RelPermalink }}"
   {{- end }}>
