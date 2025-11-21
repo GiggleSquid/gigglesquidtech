@@ -15,9 +15,10 @@
   --code-block-bg: var(--ctp-latte-surface2);
   --code-bg: var(--ctp-latte-base);
   --border: var(--ctp-latte-surface0);
+  color-scheme: light;
 }
 
-.dark {
+:root[data-theme="dark"] {
   --theme: var(--ctp-mocha-peach);
   --entry: var(--ctp-mocha-surface0);
   --primary: var(--ctp-mocha-text);
@@ -27,12 +28,13 @@
   --code-block-bg: var(--ctp-mocha-surface2);
   --code-bg: var(--ctp-mocha-base);
   --border: var(--ctp-mocha-surface1);
+  color-scheme: dark;
 }
 
 .list {
   background: var(--code-bg);
 }
 
-.dark.list {
+[data-theme="dark"] .list {
   background: var(--code-bg);
 }
