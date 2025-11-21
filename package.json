@@ -12,9 +12,9 @@
   "dependencies": {
     "@catppuccin/palette": "^1.7.1",
     "@fullhuman/postcss-purgecss": "^7.0.2",
-    "@justinribeiro/lite-youtube": "^1.7.1",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
+    "@justinribeiro/lite-youtube": "^1.9.0",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
     "postcss-calc": "^10.1.1",
     "postcss-cli": "^11.0.1"
   }
